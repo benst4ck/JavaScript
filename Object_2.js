@@ -82,13 +82,3 @@ for(p in o) {
 for(p in o) {
     if (typeof o[p] === 'function') continue;
 }
-
-
-// for-in 遍历可枚举的自有属性和继承属性
-// 'prop' in obj 自有属性或继承属性 返回true
-
-// obj.hasOwnProperty('prop')  自有属性 返回true
-// Object.getOwnPropertyNames(obj) 返回所有自有属性的属性名组成的数组
-
-// obj.propertyIsEnumerable('prop') 可枚举的自有属性 返回true
-// Object.keys(obj) 返回可枚举的自有属性的属性名组成的数组
