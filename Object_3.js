@@ -151,7 +151,7 @@ Object.getOwnPropertyDescriptor(om,'b');
 Object.getOwnPropertyDescriptor(ol,'c');
 // {value: 18, writable: true, enumerable: true, configurable: true}
 
-// for-in 遍历可枚举的自有属性和继承属性
+// for-in 遍历可枚举的自有属性和继承属性 Object.keys(obj)返回的内容 for-in都能遍历到
 // 'prop' in obj 自有属性或继承属性 返回true
 
 // obj.hasOwnProperty('prop')  自有属性 返回true
