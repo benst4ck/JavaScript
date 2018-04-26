@@ -3,6 +3,10 @@
 
 isNaN('x')  // 当参数为NaN或者是非数字值(这里参数为字符串)时 返回true
 // true
+isNaN([2,3,4])
+// true
+isNaN([3])
+// false
 
 1/0
 // Infinity
