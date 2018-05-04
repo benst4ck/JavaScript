@@ -50,6 +50,12 @@ range.methods.isPrototypeOf(a);   // 检测对象原型
 function Range(from, to) {
   this.from = from;       // this指向通过该构造函数创建的对象
   this.to = to;
+  /*
+    在构造函数底层实现了下面代码 
+
+    var r = Object.create(Range.prototype);  上面的this指向这里的对象r
+    return r;
+  */
 }
 
 // 重写预定义(默认)的Range.prototype对象 对Range()构造函数的调用会自动使用Range.prototype作为新Range对象的原型
